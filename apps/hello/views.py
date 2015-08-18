@@ -10,7 +10,7 @@ class MainPageView(TemplateView):
     def get_context_data(self, **kwargs):
         p = Person.objects.all()[0]
         context = super(MainPageView, self).get_context_data(**kwargs)
-        context['title'] = 'Нello'
+        context['title'] = 'Hello'
         context['firstname'] = p.first_name
         context['lastname'] = p.last_name
         context['birthdate'] = p.birth_date
