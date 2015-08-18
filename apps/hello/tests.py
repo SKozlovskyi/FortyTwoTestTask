@@ -22,7 +22,7 @@ class HomepageTest(TestCase):
                               -licking golden loaf
                               -ride ostriches
                               -plunder the country
-                              -stealing hats """)
+                              -stealing hats  """)
 
     def test_verifying_output_name(self):
         """Verifying the output Firstname, Lastname. Name should be displayed properly sensitive"""
