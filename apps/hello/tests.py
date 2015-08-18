@@ -14,7 +14,7 @@ class HomepageTest(TestCase):
                               con_skype='afraid_the_eggs',
                               bio="""
                               Place of birth : Yenakievo of Ukraine.
-                              He studied at 'PTU Єnakіїvsky gіrnichy tehnіkum'.
+                              He studied at 'PTU Єnakіvsky gіrnichy tehnіkum'.
                               Time teaching: from 1966-09-01 to 1967-05-05.
                               Work in "Moscow psychiatric hospital № 1"
                               in position 'Legetimniy'.
