@@ -1,1 +1,88 @@
- 
+.auth {
+    height: 120px;
+    width: 100%;
+    margin-left: 90%;
+    position: fixed;
+}
+
+h1 {
+	font-size: 130%;
+}
+
+h3 {
+	color:green;
+}
+
+.persone_main {
+	font-weight: bold;
+	font-size: 110%;
+}
+
+
+.bigtable {
+	margin-left: 5%;
+	width: 70%;
+}
+
+.table {
+	display: table;
+}
+
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
+	width: 45%;
+}
+
+.cell:last-child {
+	margin-left: 10%;
+}
+
+.multiline {
+	width:90%;
+	white-space:pre-line;
+}
+
+
+#separateline {
+	margin-left: 5%;
+	margin-top: 3%;
+	width: 90%;
+	height: 2px;
+	background-color:black;
+}
+
+.requests {
+margin-left: 5%;
+}
+
+
+
+.ef_cell {
+	display: table-cell;
+	padding: 2px 0;
+}
+
+
+.ef_row {
+	display: table-row;
+
+}
+
+.ef_row .ef_cell:first-child {
+	text-align: right;
+	padding-right: 5px;
+	width: 81px;
+}
+
+#edit {
+	margin-top: 5px;
+}
+
+.button {
+	margin-left: 5%;
+}
+
