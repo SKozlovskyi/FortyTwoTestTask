@@ -11,3 +11,13 @@ class Person(models.Model):
     con_skype = models.CharField("Skype", max_length=79)
     bio = models.TextField("Bio", max_length=400)
     con_other = models.TextField("Other Contacts", max_length=400, blank=True)
+
+
+class RequestCollect(models.Model):
+    r_method = models.CharField(max_length=20, blank=True)
+    r_path = models.CharField(max_length=90)
+    r_time = models.DateTimeField(auto_now_add=True)
+    r_read_id = models.IntegerField(blank=True)
+
+    def __str__(self):
+        return "%s   %s   '%s'" % (self.r_time.strftime('%d-%m-%Y %I:%M:%S'), self.r_method, self.r_path)
