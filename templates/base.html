@@ -27,5 +27,15 @@
         </div>
         {% endblock content %}
         {% block extra_content %}{% endblock extra_content %}
+
+        <div id="separateline"></div>
+        {% block request_list %}
+        <div class="requests">
+            <h3>Last 10 requests:</h3>
+            {% for request in request_list %}
+            <p> {{request}}</p>
+            {% endfor %}
+        </div>
+        {% endblock request_list %}
     </body>
 </html>
