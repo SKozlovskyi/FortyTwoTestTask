@@ -10,4 +10,4 @@ class Person(models.Model):
     con_jabbber = models.EmailField("Jabber", max_length=79)
     con_skype = models.CharField("Skype", max_length=79)
     bio = models.TextField("Bio", max_length=400)
-    con_other = models.TextField("Other Contacts", max_length=79, blank=True)
+    con_other = models.TextField("Other Contacts", max_length=400, blank=True)

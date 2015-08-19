@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'apps.hello',
     'south',
+    'finalware',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -127,3 +128,11 @@ TEMPLATE_DIRS = (
 
 # Turn off south during test
 SOUTH_TESTS_MIGRATE = False
+
+SITE_SUPERUSER_USERNAME = 'admin'
+SITE_SUPERUSER_EMAIL = 'admin@example.com'
+SITE_SUPERUSER_PASSWORD  = 'admin'  # this can be set from a secret file.
+
+# optional object id. Ensures that the superuser id is not set to `1`.
+# you can use this as a simple security feature
+SITE_SUPERUSER_ID = '343'
