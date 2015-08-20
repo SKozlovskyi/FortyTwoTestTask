@@ -131,7 +131,7 @@ SOUTH_TESTS_MIGRATE = False
 
 SITE_SUPERUSER_USERNAME = 'admin'
 SITE_SUPERUSER_EMAIL = 'admin@example.com'
-SITE_SUPERUSER_PASSWORD  = 'admin'  # this can be set from a secret file.
+SITE_SUPERUSER_PASSWORD = 'admin'  # this can be set from a secret file.
 
 # optional object id. Ensures that the superuser id is not set to `1`.
 # you can use this as a simple security feature

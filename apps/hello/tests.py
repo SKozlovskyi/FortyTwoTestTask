@@ -25,7 +25,8 @@ class HomepageTest(TestCase):
                               -stealing hats  """)
 
     def test_verifying_output_name(self):
-        """Verifying the output Firstname, Lastname. Name should be displayed properly sensitive"""
+        """Verifying the output Firstname, Lastname.
+        Name should be displayed properly sensitive"""
         response = self.client.get(reverse('mainpage'))
         self.assertEqual(response.status_code, 200)
         page_str = response.content.decode('utf-8')
@@ -35,7 +36,8 @@ class HomepageTest(TestCase):
     def test_verifying_output_other_comtacts(self):
         """
         Verifying the output 'Other contacts'.
-        Block 'Other contacts' contacts should not be displayed if all fields are empty
+        Block 'Other contacts' contacts should not be displayed
+        if all fields are empty
         """
         response = self.client.get(reverse('mainpage'))
         self.assertEqual(response.status_code, 200)
